@@ -1,0 +1,84 @@
+lists
+ordered, mutable, and can contain elements of different data types
+
+Creating and Printing a List
+
+my_list = [1, 2, 3, 4, 5]
+print("List:", my_list)
+Copy
+This program initializes a list and prints its elements.
+
+Adding and Removing Elements
+
+# Add elements to a list
+my_list = [10, 20, 30]
+my_list.append(40) # Add at the end
+my_list.insert(1, 15) # Add at index 1
+print("After Adding:", my_list)
+
+# Remove elements from a list
+my_list.remove(20) # Remove specific element
+del my_list[2] # Remove element at index 2
+print("After Removing:", my_list)
+Copy
+This demonstrates how to add and remove elements using append(), insert(), remove(), and del.
+
+Accessing and Slicing Elements
+
+# Access elements by index
+my_list = ['a', 'b', 'c', 'd']
+print("First Element:", my_list[0])
+print("Last Element:", my_list[-1])
+
+# Slice a list
+print("Slice [1:3]:", my_list[1:3])
+Copy
+This program shows how to access elements using positive and negative indices and slice a list.
+
+Iterating Through a List
+
+# Iterate through a list
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+print("Fruit:", fruit)
+Copy
+This uses a for loop to iterate through and print each element in the list.
+
+Sorting and Reversing a List
+
+# Sort and reverse a list
+numbers = [5, 2, 9, 1, 7]
+numbers.sort() # Sort in ascending order
+print("Sorted List:", numbers)
+
+numbers.reverse() # Reverse the list
+print("Reversed List:", numbers)
+Copy
+This program demonstrates sorting and reversing a list using sort() and reverse().
+
+Removing Duplicates
+
+# Remove duplicates from a list
+my_list = [1, 2, 2, 3, 4, 4, 5]
+unique_list = list(set(my_list))
+print("List Without Duplicates:", unique_list)
+Copy
+This removes duplicate elements by converting the list to a set and back to a list.
+
+Finding Maximum and Minimum
+
+# Find the maximum and minimum in a list
+numbers = [10, 20, 5, 40, 15]
+print("Maximum:", max(numbers))
+print("Minimum:", min(numbers))
+Copy
+This program uses max() and min() to find the largest and smallest elements in a list.
+
+List Comprehension
+
+# Create a new list with squares of numbers
+numbers = [1, 2, 3, 4, 5]
+squares = [x**2 for x in numbers]
+print("Squares:", squares)
+Copy
+This demonstrates list comprehension to generate a new list based on an existing one.
